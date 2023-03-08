@@ -8,7 +8,7 @@
 
 namespace humhub\modules\web\pwa\controllers;
 
-use humhub\components\access\ControllerAccess;
+use humhub\components\access\ManifestAccess;
 use humhub\components\Controller;
 use humhub\modules\ui\Module;
 use Yii;
@@ -31,7 +31,7 @@ class ServiceWorkerController extends Controller
      *
      * @var string
      */
-    public $access = ControllerAccess::class;
+    public $access = ManifestAccess::class;
     public $baseJs;
     public $additionalJs;
 

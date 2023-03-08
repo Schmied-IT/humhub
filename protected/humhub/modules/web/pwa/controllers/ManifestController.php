@@ -8,7 +8,7 @@
 
 namespace humhub\modules\web\pwa\controllers;
 
-use humhub\components\access\ControllerAccess;
+use humhub\components\access\ManifestAccess;
 use humhub\components\Controller;
 use humhub\modules\web\pwa\widgets\SiteIcon;
 use humhub\modules\web\Module;
@@ -30,7 +30,7 @@ class ManifestController extends Controller
      *
      * @var string
      */
-    public $access = ControllerAccess::class;
+    public $access = ManifestAccess::class;
 
     /**
      * @var array the manifest
